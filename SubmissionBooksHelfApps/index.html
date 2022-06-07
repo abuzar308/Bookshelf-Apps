@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css" class="rel">
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" />
+    <link href="assets/css/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Bookshelf Apps - Abuzar Gafari</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar container">
+          <a href="#" class="logo"><h4>Bookshelf <span>Apps</span></h4>  </a>
+          <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
+          <input type="checkbox" id="toggler">
+          <label for="toggler"><i class="ri-menu-line"></i></label>
+          <div class="menu">
+            <ul class="list">
+              <li><a href="#home"> <i class="ri-home-gear-line"></i> Home</a></li>
+              <li><a href="#bacaan"><i class="ri-book-line"></i> Rekam Buku Baru</a></li>
+              <li><a href="#caridata"><i class="ri-database-2-fill"></i> Daftar Buku Bacaan</a></li>
+              <li><a href="#profil"> <i class="ri-profile-line"></i> Profil</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        
+            <article id="home" >
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <img src="assets/images/book.jpg" class="featured-image" alt="gambar buku">
+                    </div>
+                    <div class="flex-item-right">
+                        <div class="content-caption">
+                            <h1>Bookshelf <span>Apps</span> </h1>
+                            <p>Merupakan aplikasi yang dibangun untuk memudahkan user dalam membuat list Buku yang telah dibaca ataupun yang akan dibaca</p>
+                        </div>
+                        <div class="content-button">
+                            <button class="content-btn"> <i class="ri-google-play-line"></i> Unduh Aplikasi</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+            <article id="bacaan">
+                <h1>Rekam Buku Baru</h1>
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <h2>Masukkan Buku Bacaan Baru</h2>
+                        <form class="form" action="#" id="form">
+                            <div class="form-group form-buku">
+                                <label for="judul">Judul Buku</label>
+                                <input type="text" id="judul" name="judul" required>
+                            </div>
+                            <div class="form-group form-buku">
+                                <label for="penulis">Penulis</label>
+                                <input type="text" id="penulis" name="penulis" required>
+                            </div>
+                            <div class="form-group form-buku">
+                                <label for="tahun">Tahun</label>
+                                <input type="text" id="tahun" name="tahun" required>
+                            </div>
+                            <button type="submit" value="Submit" name="Submit" class="btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        
+            <article id="caridata">
+                <div class="flex-container">
+                    <div class="cari-data">
+                        <form id="searchBook">
+                            <label for="carijudul">Masukkan kata yang akan dicari</label>
+                            <input type="text" id="carijudul" name="carijudul" required>
+                            <button type="submit" value="Submit" name="Submit" class="btn-search">Search</button>
+                        </form>
+                    </div> 
+                </div>
+                
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <div class="item-container">
+                            <h5>Rak Buku yang belum dibaca</h5>
+                            <div class="list-item" id="new-buku">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="flex-item-right">  
+                        <div class="item-container">
+                            <h5>Rak Buku yang sudah dibaca</h4>
+                                <div class="list-item" id="completed-buku">
+                                </div>
+                                <div id="tombol"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="profil" class="profile card" >
+                <header>
+                    <h2>Abuzar Gafari</h2>
+                    <p>Pranata Komputer Ahli Pertama Kantor Kementerian Agama Kota Payakumbuh</p>
+                    <figure>
+                      <img src="assets/images/profile_foto.png" class="img-bulat" alt="Foto Profil">
+                    </figure>
+                </header>
+                <section >
+                    <h3 class="center">Informasi Lainnya</h3>
+                    <table>
+                      <tr>
+                          <th>Alamat</th>
+                          <td>Kota Payakumbuh</td>
+                      </tr>
+                      <tr>
+                          <th>email</th>
+                          <td>gafariabuzar.2@gmail.com</td>
+                      </tr>
+                    </table>
+                </section>
+          </article>
+        
+    </main>
+
+    <footer>
+      ©<script>document.write(new Date().getFullYear())</script> Bookshelf Apps, Developed By <a href="#">Abuzar Gafari, S.Kom</a>
+    </footer>
+
+    <script src="assets/js/bookshelfapps.js"></script>
+  </body>
+</html>
